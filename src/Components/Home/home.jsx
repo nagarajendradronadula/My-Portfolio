@@ -13,8 +13,7 @@ const home = () => {
           FULL STACK DEVELOPER | JAVA | PYTHON
         </p>
         <a href={Resume} download="DNR-Resume-4.pdf">
-          <button className="mt-5 md:md-10 text-black p-y2 p-x3 text-sm md:text-lg md:p-y2 md:p-x4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg[#465697] border-solid bg-[#CAC9C7] p-3">
-            Here&apos;s My Resume
+        <button className="mt-5 md:md-10 text-black py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697] border-solid bg-[#CAC9C7] p-3">            Here&apos;s My Resume
           </button>
         </a>
       </div>
