@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {MdOutlineMail} from 'react-icons/md'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 

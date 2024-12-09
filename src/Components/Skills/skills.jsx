@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaCss3,
   FaHtml5,

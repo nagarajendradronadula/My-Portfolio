@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProjectCard from '../Projects/ProjectCard.jsx';
 
 const projects = () => {

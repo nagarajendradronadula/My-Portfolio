@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { RiMenu2Line, RiCloseLine } from "@remixicon/react";
 
-const navbar = () => {
-  const [menu, openMenu] = useState(false);
-  const [showMenu, setrShowMenu] = useState(true);
+const Navbar = () => {
+  const [menu, setOpenMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   return (
     <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-      <span className="text-xl font-bold tracking-wide"><a href="#Home">D.N.R's Portfolio</a></span>
+      <span className="text-xl font-bold tracking-wide"><a href="#Home">D.N.R&apos;s Portfolio</a></span>
       <ul
         className={`${
           menu ? "block" : "hidden"
@@ -40,7 +40,7 @@ const navbar = () => {
           size={30}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
           onClick={() => {
-            openMenu(!menu);
+            setOpenMenu(!menu);
             setShowMenu(!showMenu);
           }}
         />
@@ -54,4 +54,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
