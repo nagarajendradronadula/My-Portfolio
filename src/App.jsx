@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/Footer.jsx"
 function App() {
   return (
     <div className="bg-[#171d32] h-auto w-full overflow-hidden">
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <About />
       <Skills />
