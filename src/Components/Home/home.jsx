@@ -5,8 +5,8 @@ import Resume from "../../assets/DNR-Resume-4.pdf"
 const Home = () => {
   return (
     <div id="Home" className="text-white flex flex-wrap w-full justify-between items-start p-10 md:p-20">
-      <div className="md:w-3/5 md:pt-10">
-        <h1 className="text-3xl md:text-6xl font-bold flex leading-normal tracking-tighter">
+      <div className="md:w-3/5 md:pt-10 mt-8">
+        <h1 className="text-3xl md:text-4xl font-bold flex leading-normal tracking-tighter">
           Hello, I am <br /> NAGA RAJENDRA DRONADULA
         </h1>
         <p className="text-sm md:text-2xl tracking-tight mt-5">
@@ -17,7 +17,7 @@ const Home = () => {
           </button>
         </a>
       </div>
-      <div className="flex justify-center align-center mr-16">
+      <div className="flex justify-center align-center mr-14">
         <img src={profileImage} alt="" />
       </div>
     </div>
