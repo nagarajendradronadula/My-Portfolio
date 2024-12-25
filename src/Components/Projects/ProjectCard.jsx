@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+// import React from "react";
 import bannerImg from "../../assets/7358602-removebg-preview.png";
 
 const ProjectCard = ({ title, main, gitHubLink, liveLink }) => {

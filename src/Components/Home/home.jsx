@@ -2,7 +2,7 @@
 import profileImage from "../../assets/IMG_20220813_192157-modified-removebg-preview-modified.png";
 import Resume from "../../assets/DNR-Resume-4.pdf"
 
-const home = () => {
+const Home = () => {
   return (
     <div id="Home" className="text-white flex flex-wrap w-full justify-between items-start p-10 md:p-20">
       <div className="md:w-3/5 md:pt-10">
@@ -24,4 +24,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

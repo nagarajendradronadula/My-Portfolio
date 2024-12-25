@@ -1,7 +1,7 @@
 
 import ProjectCard from './ProjectCard.jsx';
 
-const projects = () => {
+const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24 text-white">
         <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider">Projects</h1>
@@ -19,4 +19,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects

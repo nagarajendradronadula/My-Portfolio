@@ -2,7 +2,7 @@
 import {MdOutlineMail} from 'react-icons/md'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 
-const footer = () => {
+const Footer = () => {
   return (
     <div id="Contact" className="flex justify-around bg-[#465697] text-white p-10 md:p-12 items-center">
         <div>
@@ -19,4 +19,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer
