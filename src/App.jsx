@@ -4,6 +4,7 @@ import About from "./Components/About/about.jsx"
 import Skills from "./Components/Skills/skills.jsx"
 import Projects from "./Components/Projects/projects.jsx"
 import Footer from "./Components/Footer/footer.jsx"
+import SimonGame from "./Components/SimonGame/simonGame.jsx"
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <SimonGame />
       <Projects />
       <Footer />
 
