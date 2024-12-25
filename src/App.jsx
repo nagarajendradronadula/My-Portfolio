@@ -5,19 +5,28 @@ import Skills from "./Components/Skills/Skills.jsx"
 import Projects from "./Components/Projects/Projects.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
 
-
-
 function App() {
+  
   return (
     <div className="bg-[#171d32] h-auto w-full overflow-hidden">
-      {/* <Navbar /> */}
+      <Navbar />
       <Home />
       <About />
       <Skills />
       <Projects />
       <Footer />
+
+      
     </div>
-  );
+  )
 }
 
-export default App;
+// function App() {
+//   return (
+//     <div className="bg-red-500 text-white p-4">
+//       Hello World!
+//     </div>
+//   )
+// }
+
+export default App
