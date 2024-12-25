@@ -1,9 +1,9 @@
 import Navbar from "./Components/Navbar/navbar.jsx";
 import Home from "./Components/Home/home.jsx";
-import About from "./Components/About/About.jsx"
-import Skills from "./Components/Skills/Skills.jsx"
-import Projects from "./Components/Projects/Projects.jsx"
-import Footer from "./Components/Footer/Footer.jsx"
+import About from "./Components/About/about.jsx"
+import Skills from "./Components/Skills/skills.jsx"
+import Projects from "./Components/Projects/projects.jsx"
+import Footer from "./Components/Footer/footer.jsx"
 
 function App() {
   
