@@ -1,6 +1,6 @@
 
 import profileImage from "../../assets/IMG_20220813_192157-modified-removebg-preview-modified.png";
-import Resume from "../../assets/DNR-Resume-EnhancedwExp - Google Docs.pdf"
+import Resume from "../../assets/DNR-Resume.pdf"
 
 const Home = () => {
   return (
