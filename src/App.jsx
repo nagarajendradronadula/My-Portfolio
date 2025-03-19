@@ -7,7 +7,6 @@ import Footer from "./Components/Footer/footer.jsx"
 import SimonGame from "./Components/SimonGame/simonGame.jsx"
 
 function App() {
-  
   return (
     <div className="bg-[#171d32] h-auto w-full overflow-hidden">
       <Navbar />
@@ -22,13 +21,5 @@ function App() {
     </div>
   )
 }
-
-// function App() {
-//   return (
-//     <div className="bg-red-500 text-white p-4">
-//       Hello World!
-//     </div>
-//   )
-// }
 
 export default App
