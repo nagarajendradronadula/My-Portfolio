@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 function ContactForm() {
   const form = useRef();
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
     subject: "",
     message: "",
   });
@@ -27,7 +29,7 @@ function ContactForm() {
           console.log(result.text);
           alert("Message sent successfully!");
           // Reset form data
-          setFormData({ subject: "", message: "" });
+          setFormData({ name: "", email: "", subject: "", message: "" });
         },
         (error) => {
           console.log(error.text);
