@@ -1,62 +1,11 @@
-// import { useRef } from "react";
-// import emailjs from "@emailjs/browser";
-
-// function EmailForm() {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm(
-//         "service_vnd2o19", // Replace with your Service ID
-//         "template_vr90enp", // Replace with your Template ID
-//         form.current,
-//         "WK0Y_E7VqGXtZOFUU"   // Replace with your Public Key
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           alert("Email sent successfully!");
-
-//         },
-//         (error) => {
-//           console.log(error.text);
-//           alert("Failed to send email. Please try again.");
-//         }
-//       );
-//   };
-
-//   return (
-//     <form ref={form} onSubmit={sendEmail}>
-//       <label>
-//         To:
-//         <input type="email" name="to_email" required />
-//       </label>
-//       <br />
-//       <label>
-//         Subject:
-//         <input type="text" name="subject" required />
-//       </label>
-//       <br />
-//       <label>
-//         Message:
-//         <textarea name="message" required></textarea>
-//       </label>
-//       <br />
-//       <button type="submit">Send Email</button>
-//     </form>
-//   );
-// }
-
-// export default EmailForm;
-
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const form = useRef();
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
     subject: "",
     message: "",
   });
@@ -80,7 +29,7 @@ function ContactForm() {
           console.log(result.text);
           alert("Message sent successfully!");
           // Reset form data
-          setFormData({ subject: "", message: "" });
+          setFormData({ name: "", email: "", subject: "", message: "" });
         },
         (error) => {
           console.log(error.text);
@@ -100,7 +49,45 @@ function ContactForm() {
         marginTop: "1rem",
       }}
     >
+       <label>
+        Name:
+        <br />
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          style={{
+            color: "black",
+            width: "100%",
+            height: "2rem",
+            fontSize: "1.2rem",
+            borderRadius: "10px"
+          }}
+          required
+        />
+      </label>
+      <br />
       <label>
+        Email:
+        <br />
+        <input
+          type="text"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          style={{
+            color: "black",
+            width: "100%",
+            height: "2rem",
+            fontSize: "1.2rem",
+            borderRadius: "10px"
+          }}
+          required
+        />
+      </label>
+      <br />
+       <label>
         Subject:
         <br />
         <input
