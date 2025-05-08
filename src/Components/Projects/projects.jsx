@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard.jsx';
 const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24 text-white">
-        <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider">Projects</h1>
+        <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider text-center">Projects</h1>
         <div className="py-12 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard title="WanderLust - Airbnb Clone" main="This is an Airbnb Clone called WanderLust and this has been built using Node.js, Express.js and MongoDB along with some libraries like passport and routers , etc., which has been deployed on Render." gitHubLink="https://github.com/nagarajendradronadula/MajorProject.git" liveLink="http://majorproject-bv6r.onrender.com/"/>
 

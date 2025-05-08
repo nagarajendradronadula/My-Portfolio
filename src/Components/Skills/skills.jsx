@@ -21,7 +21,7 @@ import {
 const Skills = () => {
   return (
     <div id="Skills" className="p-10 md:p-24">
-      <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider">Skills</h1>
+      <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider text-center">Skills</h1>
       <div className="flex flex-wrap items-center justify-around">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:p-12 py-10">
           {/* Java */}

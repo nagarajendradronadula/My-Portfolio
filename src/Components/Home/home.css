@@ -1,0 +1,49 @@
+.home-img{
+    width: 40rem;
+    height: 40rem;
+    margin: auto;
+    border-radius: 20%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+    /* background-image: url(../src/assets/graph.png); */
+}
+
+.profile-img{
+    width: 99%;
+    height: 10%;
+    border-radius: 20%;
+}
+
+/* CSS for Typing Effect */
+.typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(42) infinite alternate,
+        blink 400ms steps(5) infinite normal;
+    border-right: 3.5px solid orange;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: orange;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
