@@ -8,17 +8,18 @@ import SimonGame from "./Components/SimonGame/simonGame.jsx";
 import { useState, useEffect } from "react";
 
 function App() {
+  
   // Lazy loading
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLoading(false);
-    }, 2000); // adjust the timeout to your liking
-
+    },4000); // adjust the timeout to your liking
+    
     return () => clearTimeout(timeoutId);
   }, []);
-
+  
   if (loading) {
     return (
       <div className="lazy-loader">
@@ -33,17 +34,17 @@ function App() {
       </div>
     );
   }
-
+  
   // scroll to top button
   const aboutSection = document.getElementById("About");
   const backToTopButton = document.querySelector(".scroll-to-top");
-
+  
   window.addEventListener("scroll", () => {
     const aboutSectionTop = aboutSection.offsetTop;
     const aboutSectionHeight = aboutSection.offsetHeight;
     const windowScrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
-
+    
     if (
       !(windowScrollTop + windowHeight >= aboutSectionTop + aboutSectionHeight)
     ) {
@@ -52,7 +53,10 @@ function App() {
       backToTopButton.classList.remove("hidden");
     }
   });
-
+  
+  // alert
+  alert("Note: Try watching this site on a larger screen and at 90% zoom");
+  
   return (
     <div className="bg-[#171d32] h-auto w-full overflow-hidden">
       <Navbar />
