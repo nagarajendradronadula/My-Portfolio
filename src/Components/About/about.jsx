@@ -1,75 +1,46 @@
-
-import AboutImg from "../../assets/7358653-removebg-preview.png";
-import { IoArrowForward } from "react-icons/io5";
+import AboutImg from "../../assets/about-removebg-preview.png";
+import "./about.css";
 
 const About = () => {
   return (
-    <div
-      id="About"
-      className="text-white overflow-hidden items-start bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12"
-    >
-      <h2 className="text-2xl md:text-4xl font-bold text-center headings">About</h2>
-      <div className="md:w-full flex md:flex-wrap md:justify-center items-center gap-x-20 mt-4">
-        <div className="md:flex flex-wrap flex-col md:flex-row items-center mt-5 ">
-          <div>
-            <img
-              className="md:h-auto h-80 mr-16 flex" 
-              src={AboutImg}
-              alt="About Image"
-            />
+    <div id="About" className="about-parent">
+      <div className="text-center w-full">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-wider headings">
+          About
+        </h2>
+      </div>
+
+      <div className="about">
+        <div className="about-image">
+          <img
+            className="md:h-auto about-image"
+            src={AboutImg}
+            alt="About Image"
+          />
+        </div>
+        <div className="about-content">
+          <div className="">
+            <h1 className="">
+              NAGA RAJENDRA DRONADULA aka D.N.R
+            </h1>
+            <p className="">
+              I’m a confident and committed Computer Science graduate with
+              strong skills in Java, JavaScript, and Python. I have a solid grip
+              on backend development, especially using Java and OOP principles,
+              and I’ve built and deployed full-stack applications using the MERN
+              stack. I enjoy solving real problems through code and take pride
+              in writing clean, reliable, and scalable solutions. I don’t just
+              follow tutorials—I build, break, and fix things until I understand
+              them fully. I’m steadily improving my frontend and backend
+              development skills, and I’m currently diving deeper into
+              JavaScript and Spring Boot to expand my capabilities. I’m
+              self-driven, patient, and not afraid to put in the work to grow. I
+              don’t chase shortcuts; I focus on progress that lasts. I know I
+              have what it takes to become a strong software developer, and I’m
+              determined to keep learning, building, and proving that through
+              real results.
+            </p>
           </div>
-          <ul>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={40} className="mt-1" />
-              <span className="w-96 md:text-3xl">
-                <h1 className="text-2xl md:text-3xl font-semibold leading-normal">
-                  Full Stack Developer
-                </h1>
-                <p className="text-lg md:text-xl leading-relaxed">
-                  I am a Full Stack Developer and have learnt MERN Stack (MongoDB, Express.js, React.js & Node.js) and
-                  have built many projects based on MERN Stack. Can look at them from my Github Profile.
-                </p>
-              </span>
-            </div>
-
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={40} className="mt-1" />
-              <span className="w-96 md:text-3xl">
-                <h1 className="text-2xl md:text-3xl font-semibold leading-normal">
-                  Java Developer
-                </h1>
-                <p className="text-lg md:text-xl leading-relaxed">
-                  I am a Java Developer and have learnt Java from many sources like Youtube and Scaler. And I have proved my Java and DSA skills on Leetcode through solving 100+ Problems in 100+ days.
-                </p>
-              </span>
-            </div>
-
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={40} className="mt-1" />
-              <span className="w-96 md:text-3xl">
-                <h1 className="text-2xl md:text-3xl font-semibold leading-normal">
-                  Python Developer
-                </h1>
-                <p className="text-lg md:text-xl leading-relaxed">
-                  I am a Python Developer and have learnt Python through many online sources like Youtube and Scaler. And I have built some mini projects to practice my Python and Problem Solving skills.
-                </p>
-              </span>
-            </div>
-            
-            <div className="flex gap-3 py-4">
-              <IoArrowForward size={40} className="mt-1" />
-              <span className="w-96 md:text-3xl">
-                <h1 className="text-2xl md:text-3xl font-semibold leading-normal">
-                  Database Developer
-                </h1>
-                <p className="text-lg md:text-xl leading-relaxed">
-                  I am a Database Developer and have learnt MySQL and MongoDB
-                  and have been using them in most of my web developing
-                  projects to store and manage data of the users using my projects.
-                </p>
-              </span>
-            </div>
-          </ul>
         </div>
       </div>
     </div>

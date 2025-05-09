@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(true);
 
   return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
+    <nav className=" sticky top-0 flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20 mb-4" id="navbar">
       <span className="text-xl font-bold tracking-wide"><a href="#Home">D.N.R&apos;s Portfolio</a></span>
       <ul
         className={`${
@@ -14,22 +14,22 @@ const Navbar = () => {
         } mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opcity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
       >
         <a href="#About">
-          <li className="text-md transiton-all duration-300 p-1 md:p-0">
+          <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
             About
           </li>
         </a>
         <a href="#Skills">
-          <li className="text-md transiton-all duration-300 p-1 md:p-0">
+          <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
             Skills
           </li>
         </a>
         <a href="#Projects">
-          <li className="text-md transiton-all duration-300 p-1 md:p-0">
+          <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
             Projects
           </li>
         </a>
         <a href="#Contact">
-          <li className="text-md transiton-all duration-300 p-1 md:p-0">
+          <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
             Contact
           </li>
         </a>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./simonGame.css";
 
 const colors = ["red", "green", "blue", "yellow"];
 
@@ -87,7 +88,9 @@ const SimonGame = () => {
 
   return (
     <div className="simon-game">
-      <h1 className="game-title">Simon Game</h1>
+      <div className="text-center w-full">
+        <h1 className="game-title headings">Simon Game</h1>
+      </div>
       <p className="game-message">{message}</p>
       {level > 0 && <p className="game-level">Level: {level}</p>}
       <div className="board">
@@ -108,86 +111,6 @@ const SimonGame = () => {
           Stop
         </button>
       </div>
-
-      <style>
-        {`
-          .simon-game {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
-            background: rgba(0, 0, 0, 0.85); /* Black with opacity */
-            border-radius: 20px;
-            padding: 20px;
-            margin: 40px auto;
-            max-width: 600px;
-          }
-          .game-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #f0f0f0;
-          }
-          .game-message, .game-level {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            color: #d1d1d1;
-          }
-          .board {
-            display: grid;
-            grid-template-columns: repeat(2, 100px);
-            gap: 10px;
-            justify-content: center;
-            margin: 20px auto;
-          }
-          .color-button {
-            width: 100px;
-            height: 100px;
-            border: none;
-            border-radius: 10px;
-            opacity: 0.8;
-            cursor: pointer;
-            transition: transform 0.1s, opacity 0.3s;
-          }
-          .color-button:active {
-            transform: scale(0.9);
-          }
-          .color-button.active {
-            opacity: 1;
-          }
-          .red {
-            background-color: red;
-          }
-          .green {
-            background-color: green;
-          }
-          .blue {
-            background-color: blue;
-          }
-          .yellow {
-            background-color: yellow;
-          }
-          .controls {
-            margin-top: 20px;
-          }
-          .control-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 0 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            background: white;
-            color: black;
-            transition: all 0.3s ease;
-          }
-          .control-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-          }
-          .control-button:active {
-            transform: scale(0.95);
-          }
-        `}
-      </style>
     </div>
   );
 };

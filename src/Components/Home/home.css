@@ -1,6 +1,18 @@
+/* hero text */
+.hero-text{
+    margin: auto;
+}
+
+.hero-text h1{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+/* profile image animation */
 .home-img{
-    width: 40rem;
-    height: 40rem;
+    width: 45rem;
+    height: 45rem;
     margin: auto;
     border-radius: 20%;
     overflow: hidden;
@@ -10,31 +22,66 @@
     align-items: center;
     background-size: cover;
 
-    /* background-image: url(../src/assets/graph.png); */
+    z-index: 2;
 }
 
-.profile-img{
-    width: 99%;
-    height: 10%;
-    border-radius: 20%;
+.background-image{
+    width: 85%;
+    position: absolute;
+    animation: rotate 20s linear infinite;
+
+    z-index: -1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-image{
+    width: 40rem;
+    height: 35rem;
+    position: absolute;
+    /* padding: 5rem; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    /* clip-path: circle(40%); */
+    text-align: center;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
 
 /* CSS for Typing Effect */
 .typewriter {
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(42) infinite alternate,
-        blink 400ms steps(5) infinite normal;
+    animation: typewriter 9s steps(42, end) infinite alternate,
+        blink 350ms steps(5) infinite alternate;
     border-right: 3.5px solid orange;
 }
 
 @keyframes typewriter {
-    from {
+    0% {
         width: 0%;
     }
 
-    to {
-        width: 50%;
+    35% {
+        width: 38%;
+    }
+
+    65% {
+        width: 38%;
+    }
+
+    100% {
+        width: 0%;
     }
 }
 

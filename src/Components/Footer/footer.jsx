@@ -17,17 +17,17 @@ const Footer = () => {
         <ul className="text-normal md:txt-xl mt-5">
           <li className="flex gap-1 items-center mt-5 text-lg">
             <MdOutlineMail size={27} />
-            <a href="mailto:nagarajendra432@gmail.com">nagarajendra432@gmail</a>
+            <a href="mailto:nagarajendra432@gmail.com" target="_blank">nagarajendra432@gmail</a>
           </li>
           <li className="flex gap-1 items-center mt-4 tezt-lg">
             <FaLinkedin size={27} />
-            <a href="https://www.linkedin.com/in/nagarajendradronadula/">
+            <a href="https://www.linkedin.com/in/nagarajendradronadula/" target="_blank">
               linkedin.com/nagarajendradronadula
             </a>
           </li>
           <li className="flex gap-1 items-center mt-4 text-lg">
             <FaGithub size={27} />
-            <a href="https://github.com/nagarajendradronadula">
+            <a href="https://github.com/nagarajendradronadula" target="_blank">
               github.com/nagarajendradronadula
             </a>
           </li>

@@ -4,12 +4,12 @@ import bannerImg from "../../assets/7358602-removebg-preview.png";
 
 const ProjectCard = ({ title, main, gitHubLink, liveLink }) => {
   return (
-    <div className="p-3 md:p-6 flex flex-col w-[24rem] bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl text-lg">
-      <img className="p-4" src={bannerImg} alt="" />
-      <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">
+    <div className="p-3 md:p-6 flex flex-col w-[16rem] bg-[#0c0e19] shadow-xl shadow-blue-400 rounded-2xl text-lg">
+      <img className="p-4 w-2" src={bannerImg} alt="" />
+      <h3 className="px-4 text-xl md:text-2xl font-bold text-center leading-normal">
         {title}
       </h3>
-      <p className="px-4 text-sm md:text-md leading-tight py-2">{main}</p>
+      <p className="px-4 text-md md:text-md text-justify leading-tight py-2">{main}</p>
       <div className="mt-2 p-2 md:p-4 flex justify-center gap-12">
         {liveLink && (
           <button
