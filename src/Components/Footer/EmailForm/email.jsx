@@ -43,8 +43,9 @@ function ContactForm() {
     <form
       ref={form}
       onSubmit={sendEmail}
+      className="form"
     >
-       <label>
+       <label className="label">
         Name:
         <br />
         <input
@@ -52,18 +53,12 @@ function ContactForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          style={{
-            color: "black",
-            width: "100%",
-            height: "2.2rem",
-            fontSize: "1.3rem",
-            borderRadius: "10px"
-          }}
+          className="input"
           required
         />
       </label>
       <br />
-      <label>
+      <label className="label">
         Email:
         <br />
         <input
@@ -71,18 +66,12 @@ function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          style={{
-            color: "black",
-            width: "100%",
-            height: "2rem",
-            fontSize: "1.2rem",
-            borderRadius: "10px"
-          }}
+          className="input"
           required
         />
       </label>
       <br />
-       <label>
+       <label className="label">
         Subject:
         <br />
         <input
@@ -90,36 +79,24 @@ function ContactForm() {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          style={{
-            color: "black",
-            width: "100%",
-            height: "2rem",
-            fontSize: "1.2rem",
-            borderRadius: "10px"
-          }}
+          className="input"
           required
         />
       </label>
       <br />
-      <label>
+      <label className="label">
         Message:
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          style={{
-            color: "black",
-            width: "100%",
-            height: "5rem",
-            fontSize: "1.2rem",
-            borderRadius: "10px"
-          }}
+          className="textarea"
           required
         ></textarea>
       </label>
       <br />
-      <button type="submit">
-        <span>Send Message</span>
+      <button className="button" type="submit">
+        Send Message
       </button>
     </form>
   );

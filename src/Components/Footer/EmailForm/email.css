@@ -1,4 +1,4 @@
-form {
+.form {
     border: 2px solid white;
     padding: 1.5rem;
     border-radius: 15px;
@@ -6,31 +6,35 @@ form {
     width: 28%;
 }
 
-input {
-    padding: 0.5rem auto;
+.input {
+    padding: 0.5rem;
     margin: 0.5rem auto;
     border-radius: 10px;
-    height: 1.4rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 32rem;
+    color: black;
 }
 
-textarea {
-    padding: 0.5rem auto;
+.textarea {
+    padding: 0.5rem;
     margin: 0.5rem auto;
     border-radius: 10px;
     width: 100%;
+    width: 32rem;
+    height: 5rem;
+    color: black;
 }
 
-label{
+.label{
     font-size: 1.2rem;
 }
 
-button{
+.button{
     font-size: 1.2rem;
     padding: 1rem;
     margin: 0.5rem auto;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #171d32;
     border-radius: 10px;
     color: white;
     font-weight: bolder;

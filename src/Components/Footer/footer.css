@@ -12,7 +12,8 @@ ul li a {
     font-size: 1.5rem;
 }
 
-h2{
+.bottom-text{
     font-size: 1.2rem;
+    text-align: center;
     text-decoration: underline;
 }

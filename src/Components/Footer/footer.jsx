@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <EmailForm />
       </div>
-      <h2 className="text-center">Made with ❤️ by D.N.R</h2>
+      <h2 className="bottom-text">Made with ❤️ by <b>D.N.R</b></h2>
     </div>
   );
 };

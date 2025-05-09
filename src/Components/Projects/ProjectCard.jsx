@@ -14,14 +14,14 @@ const ProjectCard = ({ title, main, gitHubLink, liveLink }) => {
         {liveLink && (
           <button
             onClick={() => window.open(liveLink, "_blank")}
-            className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697] border-solid"
+            className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
           >
             Demo
           </button>
         )}
         <button
           onClick={() => window.open(gitHubLink, "_blank")}
-          className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697] border-solid"
+          className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
         >
           Source Code
         </button>
