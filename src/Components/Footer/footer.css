@@ -1,0 +1,18 @@
+.footer-heading{
+    font-size: 2rem;
+    padding: 0.5rem auto;
+}
+
+.footer-para{
+    font-size: 1.5rem;
+    padding: 0.5rem auto;
+}
+
+ul li a {
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}

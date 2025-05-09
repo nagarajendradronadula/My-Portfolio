@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24 text-white">
       <div className="text-center w-full">
-        <h1 className="text-2xl md:text-4xl font-bold tracking-wider headings">Projects</h1>
+        <h1 className="text-2xl md:text-4xl font-bold tracking-wider headings">My Works</h1>
       </div>
       
         <div className="py-12 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

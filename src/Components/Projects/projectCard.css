@@ -1,0 +1,43 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 5px 10px 10px rgba(60, 60, 60, 0.637);
+}
+
+.projectCard img{
+    width: 80%;
+}
+
+.projectCard h3{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.projectCard p{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.projectCard button{
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color: #465697;
+    opacity: 0.8;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.projectCard button:hover{
+    opacity: 1;
+}

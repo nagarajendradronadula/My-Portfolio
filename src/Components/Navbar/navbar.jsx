@@ -20,12 +20,17 @@ const Navbar = () => {
         </a>
         <a href="#Skills">
           <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
-            Skills
+            Skillset
+          </li>
+        </a>
+        <a href="#FunGame">
+          <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
+            Fun-Game
           </li>
         </a>
         <a href="#Projects">
           <li className="text-lg transiton-all duration-300 p-1 md:p-0 nav-links">
-            Projects
+            My-Works
           </li>
         </a>
         <a href="#Contact">

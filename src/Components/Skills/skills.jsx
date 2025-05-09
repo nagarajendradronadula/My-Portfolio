@@ -23,13 +23,13 @@ const Skills = () => {
     <div id="Skills" className="p-10 md:p-24">
       <div className="text-center w-full">
         <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wider text-center headings">
-          Skills
+          Skillset
         </h1>
       </div>
       <div className="flex flex-wrap items-center justify-around">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:p-12 py-10">
           {/* Java */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaJava color="#007396" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Java
@@ -37,7 +37,7 @@ const Skills = () => {
           </div>
 
           {/* Python */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaPython color="#306998" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Python
@@ -45,7 +45,7 @@ const Skills = () => {
           </div>
 
           {/* HTML */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaHtml5 color="#E34F26" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               HTML5
@@ -53,7 +53,7 @@ const Skills = () => {
           </div>
 
           {/* CSS */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaCss3 color="#1572B6" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               CSS3
@@ -61,7 +61,7 @@ const Skills = () => {
           </div>
 
           {/* JavaScript */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaJs color="#F7DF1E" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               JavaScript
@@ -69,7 +69,7 @@ const Skills = () => {
           </div>
 
           {/* Node.js */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaNodeJs color="#339933" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Node.js
@@ -77,7 +77,7 @@ const Skills = () => {
           </div>
 
           {/* Express */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <SiExpress color="#FFFFFF" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Express.js
@@ -85,7 +85,7 @@ const Skills = () => {
           </div>
 
           {/* React */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaReact color="#61DAFB" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               React.js
@@ -93,7 +93,7 @@ const Skills = () => {
           </div>
 
           {/* MongoDB */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <SiMongodb color="#47A248" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               MongoDB
@@ -101,7 +101,7 @@ const Skills = () => {
           </div>
 
           {/* MySQL */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <SiMysql color="#4479A1" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               MySQL
@@ -109,7 +109,7 @@ const Skills = () => {
           </div>
 
           {/* Tailwind CSS */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <SiTailwindcss color="#06B6D4" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Tailwind CSS
@@ -117,7 +117,7 @@ const Skills = () => {
           </div>
 
           {/* Redux */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <SiRedux color="#764ABC" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Redux
@@ -125,7 +125,7 @@ const Skills = () => {
           </div>
 
           {/* GitHub */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaGithub color="#FFFFFF" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               GitHub
@@ -133,7 +133,7 @@ const Skills = () => {
           </div>
 
           {/* BootStrap */}
-          <div className="p-3 bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
+          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
             <FaBootstrap color="#A66ADE" size={100} />
             <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
               Bootsrap CSS

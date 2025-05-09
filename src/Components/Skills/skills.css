@@ -1,8 +1,13 @@
 .tiles{
     background-color: rgba(0, 0, 0, 0.65);
     transition: 0.30s ease-in-out;
+    padding: 1.5rem;
+}
+
+.tiles p{
+    padding: 1rem;
 }
 
 .tiles:hover{
-    background-color: rgba(176, 176, 176, 0.85);
+    background-color: rgba(125, 125, 125, 0.85);
 }

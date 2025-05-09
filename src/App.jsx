@@ -65,7 +65,7 @@ function App() {
 
       <a href="#navbar">
         <div className="text-center font-semibold scroll-to-top">
-          ↑ <br /> Back to top{" "}
+          ↑
         </div>
       </a>
     </div>

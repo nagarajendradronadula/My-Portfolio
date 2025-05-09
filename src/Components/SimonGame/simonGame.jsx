@@ -87,7 +87,7 @@ const SimonGame = () => {
   };
 
   return (
-    <div className="simon-game">
+    <div id="FunGame" className="simon-game">
       <div className="text-center w-full">
         <h1 className="game-title headings">Simon Game</h1>
       </div>

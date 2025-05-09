@@ -6,7 +6,7 @@ const About = () => {
     <div id="About" className="about-parent">
       <div className="text-center w-full">
         <h2 className="text-2xl md:text-4xl font-bold tracking-wider headings">
-          About
+          About Me!
         </h2>
       </div>
 

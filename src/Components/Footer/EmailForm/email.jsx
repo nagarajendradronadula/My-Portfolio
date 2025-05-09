@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import "./email.css";
 
 function ContactForm() {
   const form = useRef();
@@ -42,12 +43,6 @@ function ContactForm() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      style={{
-        border: "2px solid white",
-        padding: "1rem",
-        borderRadius: "15px",
-        marginTop: "1rem",
-      }}
     >
        <label>
         Name:
@@ -60,8 +55,8 @@ function ContactForm() {
           style={{
             color: "black",
             width: "100%",
-            height: "2rem",
-            fontSize: "1.2rem",
+            height: "2.2rem",
+            fontSize: "1.3rem",
             borderRadius: "10px"
           }}
           required
@@ -123,7 +118,7 @@ function ContactForm() {
         ></textarea>
       </label>
       <br />
-      <button type="submit"  style={{border: "2px solid white", padding:"0.5rem", backgroundColor:"rgb(23,29,50)", fontWeight:"bold", borderRadius:"5px", marginTop:"1rem"}}>
+      <button type="submit">
         <span>Send Message</span>
       </button>
     </form>
