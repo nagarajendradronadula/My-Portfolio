@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./simonGame.css";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const colors = ["red", "green", "blue", "yellow"];
 
@@ -86,8 +88,36 @@ const SimonGame = () => {
     }
   };
 
+  // Animate on view
+  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
+
+  // Slide variant (used by heading and section)
+  const slideVariant = {
+    hidden: { x: "100vw" },
+    visible: {
+      x: 0,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+
+  // Fade variant for image and content
+  const fadeVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 1, delay: 0.5, ease: "easeInOut" },
+    },
+  };
+
   return (
-    <div id="FunGame" className="simon-game">
+    <motion.div
+      id="FunGame"
+      className="simon-game"
+      ref={ref}
+      variants={{slideVariant, fadeVariant}}
+      initial={{ x: 200, opacity: 0 }}
+      animate={inView ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
+    >
       <div className="text-center w-full">
         <h1 className="game-title headings">Simon Game</h1>
       </div>
@@ -111,7 +141,7 @@ const SimonGame = () => {
           Stop
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,6 @@
 // import profileImage from "../../assets/IMG_20220813_192157-modified-removebg-preview-modified.png";
-import profileImage from "../../assets/image.png";
-import backgroundImage from "../../assets/graph.png";
+import profileImage from "../../assets/IMG_20250512_034130-removebg-preview.png";
+import backgroundImage from "../../assets/graph (1).png";
 import Resume from "../../assets/DNR-RESUME.pdf";
 import "./home.css";
 
@@ -29,12 +29,18 @@ const Home = () => {
       </div>
       <div className="flex justify-center align-center mr-36">
         <div className="home-img">
-          <img src = {backgroundImage}  alt="background-image" className="background-image" />
           <img
-            src={profileImage}
-            alt="profile-image"
-            className="profile-image"
+            src={backgroundImage}
+            alt="background-image"
+            className="background-image"
           />
+          <div className="profile-img-parent">
+            <img
+              src={profileImage}
+              alt="profile-image"
+              className="profile-image"
+            />
+          </div>
         </div>
       </div>
     </div>

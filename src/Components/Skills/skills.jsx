@@ -1,4 +1,4 @@
-import "./skills.css"
+import "./skills.css";
 import {
   FaCss3,
   FaHtml5,
@@ -17,8 +17,25 @@ import {
   SiTailwindcss,
   SiRedux,
 } from "react-icons/si";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Skills = () => {
+  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
+  
+  const tileVariants = {
+    hidden: { x: 400, opacity: 0 },
+    visible: (i) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: i * 0.10, // delay increases per tile (0.2s, 0.4s, 0.6s, etc.)
+        duration: 0.8,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
   return (
     <div id="Skills" className="p-10 md:p-24">
       <div className="text-center w-full">
@@ -28,117 +45,42 @@ const Skills = () => {
       </div>
       <div className="flex flex-wrap items-center justify-around">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:p-12 py-10">
-          {/* Java */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaJava color="#007396" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Java
-            </p>
-          </div>
-
-          {/* Python */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaPython color="#306998" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Python
-            </p>
-          </div>
-
-          {/* HTML */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaHtml5 color="#E34F26" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              HTML5
-            </p>
-          </div>
-
-          {/* CSS */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaCss3 color="#1572B6" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              CSS3
-            </p>
-          </div>
-
-          {/* JavaScript */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaJs color="#F7DF1E" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              JavaScript
-            </p>
-          </div>
-
-          {/* Node.js */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaNodeJs color="#339933" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Node.js
-            </p>
-          </div>
-
-          {/* Express */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <SiExpress color="#FFFFFF" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Express.js
-            </p>
-          </div>
-
-          {/* React */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaReact color="#61DAFB" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              React.js
-            </p>
-          </div>
-
-          {/* MongoDB */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <SiMongodb color="#47A248" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              MongoDB
-            </p>
-          </div>
-
-          {/* MySQL */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <SiMysql color="#4479A1" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              MySQL
-            </p>
-          </div>
-
-          {/* Tailwind CSS */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <SiTailwindcss color="#06B6D4" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Tailwind CSS
-            </p>
-          </div>
-
-          {/* Redux */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <SiRedux color="#764ABC" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Redux
-            </p>
-          </div>
-
-          {/* GitHub */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaGithub color="#FFFFFF" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              GitHub
-            </p>
-          </div>
-
-          {/* BootStrap */}
-          <div className=" bg-zinc-950 flex flex-col items-center rounded-2xl duration-300 hover:scale-105 tiles">
-            <FaBootstrap color="#A66ADE" size={100} />
-            <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
-              Bootsrap CSS
-            </p>
-          </div>
+          {[
+            { Icon: FaJava, name: "Java", color: "#007396" },
+            { Icon: FaPython, name: "Python", color: "#306998" },
+            { Icon: FaHtml5, name: "HTML5", color: "#E34F26" },
+            { Icon: FaCss3, name: "CSS3", color: "#1572B6" },
+            { Icon: FaJs, name: "JavaScript", color: "#F7DF1E" },
+            { Icon: FaNodeJs, name: "Node.js", color: "#339933" },
+            { Icon: SiExpress, name: "Express.js", color: "#FFFFFF" },
+            { Icon: FaReact, name: "React.js", color: "#61DAFB" },
+            { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+            { Icon: SiMysql, name: "MySQL", color: "#4479A1" },
+            { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
+            { Icon: SiRedux, name: "Redux", color: "#764ABC" },
+            { Icon: FaGithub, name: "GitHub", color: "#FFFFFF" },
+            { Icon: FaBootstrap, name: "Bootsrap CSS", color: "#A66ADE" },
+          ].map(({ Icon, name, color }, idx) => (
+            <div key={idx} className="tiles-container">
+              <motion.div
+                className="tiles"
+                ref={ref}
+                custom={idx}
+                variants={tileVariants}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <Icon color={color} size={100} />
+                <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
+                  {name}
+                </p>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

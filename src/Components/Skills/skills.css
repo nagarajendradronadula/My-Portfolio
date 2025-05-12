@@ -1,13 +1,21 @@
-.tiles{
-    background-color: rgba(0, 0, 0, 0.65);
-    transition: 0.30s ease-in-out;
+.tiles {
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1.5rem;
+    margin: 0.5rem;
+    transition: background-color, transform 0.5s ease-in-out both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(60, 60, 60, 0.637);
 }
 
-.tiles p{
+.tiles:hover {
+    background-color: rgba(125, 125, 125, 0.45);
+    box-shadow: 5px 10px 10px rgba(163, 163, 163, 0.637);
+}
+
+.tiles p {
     padding: 1rem;
-}
-
-.tiles:hover{
-    background-color: rgba(125, 125, 125, 0.85);
 }
