@@ -29,7 +29,7 @@ const Skills = () => {
       x: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.10, // delay increases per tile (0.2s, 0.4s, 0.6s, etc.)
+        delay: i * 0.10, // delay increases per tile (0.1s, 0.2s, 0.3s, etc.)
         duration: 0.8,
         ease: "easeInOut",
       },
