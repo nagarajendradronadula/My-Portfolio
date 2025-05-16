@@ -11,7 +11,7 @@ const About = () => {
     hidden: { x: "100vw" },
     visible: {
       x: 0,
-      transition: { duration: 1, ease: "easeInOut" },
+      transition: { duration: 3, ease: "easeInOut" },
     },
   };
 
@@ -20,7 +20,7 @@ const About = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 1, delay: 0.5, ease: "easeInOut" },
+      transition: { duration: 3, delay: 0.5, ease: "easeInOut" },
     },
   };
 

@@ -14,7 +14,7 @@ const ProjectCard = ({ title, main, gitHubLink, liveLink, custom }) => {
       opacity: 1,
       transition: {
         delay: i * 0.2,
-        duration: 0.8,
+        duration: 1.2,
         ease: "easeInOut",
       },
     }),

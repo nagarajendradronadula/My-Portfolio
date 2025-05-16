@@ -89,14 +89,14 @@ const SimonGame = () => {
   };
 
   // Animate on view
-  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
+  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: false });
 
   // Slide variant (used by heading and section)
   const slideVariant = {
     hidden: { x: "100vw" },
     visible: {
       x: 0,
-      transition: { duration: 1, ease: "easeInOut" },
+      transition: { duration: 3, ease: "easeInOut" },
     },
   };
 
@@ -105,7 +105,7 @@ const SimonGame = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 1, delay: 0.5, ease: "easeInOut" },
+      transition: { duration: 3, delay: 0.5, ease: "easeInOut" },
     },
   };
 
