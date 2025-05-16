@@ -14,11 +14,11 @@ const Home = () => {
         <h1 className="text-2xl md:text-4xl font-bold flex leading-normal tracking-wide">
           Hello, I am
         </h1>
-        <h1 className="text-2xl md:text-4xl font-bold flex leading-normal tracking-wide">
+        <h1 className="text-2xl md:text-4xl py-4 font-bold flex leading-normal tracking-wide">
           NAGA RAJENDRA DRONADULA
         </h1>
-        <p className="text-sm md:text-2xl tracking-tight mt-5 typewriter">
-          FULL STACK DEVELOPER | JAVA | PYTHON
+        <p className="text-sm md:text-2xl tracking-wide bg-white-900 mt-5 typewriter">
+          &nbsp;FULL STACK DEVELOPER | JAVA | PYTHON
         </p>
         {/* <a href={Resume} download="DNR-Resume.pdf"> */}
         <a href={Resume} target="_blank">

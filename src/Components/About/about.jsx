@@ -34,7 +34,7 @@ const About = () => {
       animate={inView ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
     >
       <div className="text-center w-full">
-        <h2 className="text-2xl md:text-4xl font-bold tracking-wider headings">
+        <h2 className="text-2xl md:text-4xl p-5 font-bold tracking-wider headings">
           About Me!
         </h2>
       </div>

@@ -1,0 +1,13 @@
+span a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+span a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding: 0.8rem;
+}

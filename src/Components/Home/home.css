@@ -97,6 +97,11 @@
     animation: typewriter 9s steps(42, end) infinite alternate,
         blink 350ms steps(5) infinite alternate;
     border-right: 3.5px solid orange;
+    background-color: azure;
+    color: black;
+    font-size: 2rem;
+    font-weight: 670;
+    padding: 0.2rem 0;
 }
 
 @keyframes typewriter {
@@ -105,11 +110,11 @@
     }
 
     35% {
-        width: 35%;
+        width: 51.5%;
     }
 
     65% {
-        width: 35%;
+        width: 51.5%;
     }
 
     100% {

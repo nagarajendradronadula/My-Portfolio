@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RiMenu2Line, RiCloseLine } from "@remixicon/react";
+import "./navbar.css";
 
 const Navbar = () => {
   const [menu, setOpenMenu] = useState(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className=" sticky top-0 flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20 mb-4" id="navbar">
-      <span className="text-xl font-bold tracking-wide"><a href="#Home">D.N.R&apos;s Portfolio</a></span>
+      <span className="text-2xl font-bold tracking-wide hover:bg-white-900"><a href="#Home">D.N.R&apos;s Portfolio</a></span>
       <ul
         className={`${
           menu ? "block" : "hidden"

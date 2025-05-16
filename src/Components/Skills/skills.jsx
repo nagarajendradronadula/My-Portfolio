@@ -75,7 +75,7 @@ const Skills = () => {
                 }}
               >
                 <Icon color={color} size={100} />
-                <p className="text-white text-center text-2xl font-semibold mt-2 tracking-wider">
+                <p className="text-white text-center text-xl font-semibold mt-2 tracking-wider">
                   {name}
                 </p>
               </motion.div>
