@@ -11,3 +11,42 @@ span a:hover{
     border-radius: 30px;
     padding: 0.8rem;
 }
+
+.theme-button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 2px var(--button-box-shadow);
+    transition: 0.15s ease;
+    width: 3rem;
+    text-align: center;
+}
+
+.theme-button i{
+    font-size: 1.4rem;
+}
+
+.theme-button:hover{
+    box-shadow: var(--button-box-shadow);
+}
+
+.bright{
+    background-color: yellow;
+}
+
+.bright:hover{
+    background-color: darkblue !important;
+    color: white;
+} 
+
+.dark{
+    background-color: darkblue;
+    color: white;
+}
+
+.dark:hover{
+    background-color: yellow !important;
+    color: black;
+}

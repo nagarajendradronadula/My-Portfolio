@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { RiMenu2Line, RiCloseLine } from "@remixicon/react";
 import "./navbar.css";
 
@@ -6,9 +6,43 @@ const Navbar = () => {
   const [menu, setOpenMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
 
+  // const icon = document.getElementById("icon");
+
+  // icon.addEventListener("click", function () {
+  //   document.body.classList.toggle("dark-theme");
+  //   if (document.body.classList.contains("dark-theme")) {
+  //     icon.innerHTML =
+  //       "<button class='theme-button bright'><i class='fa-solid fa-sun'></i></button>";
+  //   } else {
+  //     icon.innerHTML =
+  //       "<button class='theme-button dark'><i class='fa-solid fa-moon'></i></button>";
+  //   }
+  // });
+
+  const iconRef = useRef(null);
+
+  useEffect(() => {
+    const icon = iconRef.current;
+    icon.addEventListener("click", function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.innerHTML =
+          "<button class='theme-button bright'><i class='fa-solid fa-sun'></i></button>";
+      } else {
+        icon.innerHTML =
+          "<button class='theme-button dark'><i class='fa-solid fa-moon'></i></button>";
+      }
+    });
+  }, []);
+
   return (
-    <nav className=" sticky top-0 flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20 mb-4" id="navbar">
-      <span className="text-2xl font-bold tracking-wide hover:bg-white-900"><a href="#Home">D.N.R&apos;s Portfolio</a></span>
+    <nav
+      className=" sticky top-0 flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20 mb-4"
+      id="navbar"
+    >
+      <span className="text-2xl font-bold tracking-wide hover:bg-white-900">
+        <a href="#Home">D.N.R&apos;s Portfolio</a>
+      </span>
       <ul
         className={`${
           menu ? "block" : "hidden"
@@ -40,6 +74,11 @@ const Navbar = () => {
           </li>
         </a>
       </ul>
+      <div className="theme" id="icon">
+        <button ref={iconRef} className="theme-button">
+          <i className="fa-solid fa-moon"></i>
+        </button>
+      </div>
 
       {showMenu ? (
         <RiMenu2Line
